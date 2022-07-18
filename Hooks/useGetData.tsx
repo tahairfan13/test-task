@@ -1,7 +1,7 @@
 import * as React from "react";
 import axios from "axios";
 
-axios.defaults.baseURL = "http://hn.algolia.com/api/v1";
+axios.defaults.baseURL = "https://hn.algolia.com/api/v1";
 
 export const useGetData = (params: string) => {
   const [data, setData] = React.useState<any>(null);
